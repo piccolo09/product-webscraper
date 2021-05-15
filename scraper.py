@@ -7,7 +7,8 @@ import pandas as pd
 base_url = 'https://www.google.com/search?q='
 type_url = 'tbm=shop'
 produt = input("What are you searching for:")
-# print(produt)
+
+# Getting responce from url
 response =  requests.get(base_url+produt+'&'+type_url) 
 print(response.url)
 page_content = response.text
